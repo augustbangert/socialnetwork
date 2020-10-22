@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
+/***** page styling and coloring ******/
+
+* {
+    /* background-color: #eef2fb; */
+    /* margin-right: 30px; */
+}
+
+#top-div {
+    background-color: #eef2fb;
+    border: 2px solid #222627;
+    padding: 10px;
+}
+
+header {
+    background-color: #eef2fb;
+}
+
+#home-div {
+    background-color: #eef2fb;
+}
+
+/******* fonts: style, color and size *******/
+
+h1,
+header,
+a,
+p,
+.link,
+button,
+input {
+    /* flex-direction: column; */
+    /* margin: auto; */
+    /* position: relative; */
+    color: #222627;
+    /* font: 12px; */
+    /* width: 280px; */
+    font-family: "Architects Daughter", cursive;
+    /* cancels the h2 bolding */
+    font-weight: normal;
+    font-size: large;
+}
+
+h1 {
+    font-size: x-large;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+/******* hyperlink decoration *******/
+
+a:link,
+a:visited {
+    text-decoration: underline;
+    color: red;
+}
+
+a:hover,
+a:active {
+    color: red;
+    text-decoration: underline;
+    background-color: #ccd4cd;
+    /* display: inline-block; */
+    border-radius: 40%;
+}
+
+/******* positioning *******/
+
+main > * {
+    margin: auto;
+}
+
+#top-div {
+    width: 350px;
+    /* controls the width of the div */
+    /* text-align: center; */
+}
+
+#home-div {
+    display: flex;
+    flex-direction: column;
+}
+
+#home-div > * {
+    width: fit-content;
+}
+
+/******* spacing *******/
+
+.event-title {
+    margin-left: 100px;
+}
+
+.contact-details {
+    margin: 0;
+}
+
+a {
+    margin-left: 50px;
+}
