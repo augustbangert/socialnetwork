@@ -1,11 +1,3 @@
 node_modules
 .DS_Store
 secrets.json
-package-lock.json
-token.json
-credentials.json
-client_id_and_secret.md
-test.md
-smtp.md
-smtp.json
-src/smtp.json

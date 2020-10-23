@@ -1,101 +1,149 @@
-@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
-
-/***** page styling and coloring ******/
-
 * {
-    /* background-color: #eef2fb; */
-    /* margin-right: 30px; */
+    margin: 0;
+    background-color: cornsilk;
+    /* overflow-x: hidden;
+    overflow-y: scroll; */
 }
 
-#top-div {
-    background-color: #eef2fb;
-    border: 2px solid #222627;
-    padding: 10px;
-}
-
-header {
-    background-color: #eef2fb;
-}
-
-#home-div {
-    background-color: #eef2fb;
-}
-
-/******* fonts: style, color and size *******/
-
-h1,
-header,
-a,
 p,
-.link,
+a,
 button,
-input {
-    /* flex-direction: column; */
-    /* margin: auto; */
-    /* position: relative; */
-    color: #222627;
-    /* font: 12px; */
-    /* width: 280px; */
-    font-family: "Architects Daughter", cursive;
-    /* cancels the h2 bolding */
-    font-weight: normal;
-    font-size: large;
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: courier;
 }
 
 h1 {
-    font-size: x-large;
-    font-weight: normal;
-    margin-top: 10px;
+    font-size: 60px;
+    margin: 20px;
 }
 
-/******* hyperlink decoration *******/
-
-a:link,
-a:visited {
-    text-decoration: underline;
-    color: red;
+p {
+    font-size: 14px;
 }
 
-a:hover,
-a:active {
-    color: red;
-    text-decoration: underline;
-    background-color: #ccd4cd;
-    /* display: inline-block; */
-    border-radius: 40%;
+.link {
+    /* color: crimson; */
 }
 
-/******* positioning *******/
-
-main > * {
-    margin: auto;
+#welcome-div,
+#registration-div,
+#resetpassword-div {
+    display: grid;
+    justify-content: center;
+    align-content: center;
 }
 
-#top-div {
-    width: 350px;
-    /* controls the width of the div */
-    /* text-align: center; */
+#welcome-div > *,
+#registration-div > *,
+#login-div > *,
+#resetpassword-1-div > *,
+#resetpassword-2-div > * {
+    display: grid;
+    justify-content: center;
+    align-content: center;
 }
 
-#home-div {
+#app-div {
+    height: 100vh;
+    width: 100vw;
+}
+
+#app-div > * {
+}
+
+#photo-form {
+    max-width: 80%;
+}
+
+#uploader {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#uploader-div > * {
     display: flex;
     flex-direction: column;
+    justify-content: right;
 }
 
-#home-div > * {
-    width: fit-content;
+#uploader-div {
+    border: black 3px solid;
+    border-radius: 2%;
 }
 
-/******* spacing *******/
-
-.event-title {
-    margin-left: 100px;
+form {
+    display: grid;
+    justify-content: center;
+    align-content: center;
 }
 
-.contact-details {
-    margin: 0;
+form > * {
+    display: grid;
+    justify-content: center;
+    margin: 3px;
 }
 
-a {
-    margin-left: 50px;
+img {
+    /* background-color: transparent; */
 }
+
+#bass-logo {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+}
+
+#logout {
+    padding: 5px;
+}
+
+#browser-router-1-div {
+    /* display: flex;
+    justify-content: right; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#profile-div {
+    width: auto;
+    height: auto;
+    border: black 3px solid;
+    border-radius: 2%;
+    padding: 10px;
+}
+
+#bioeditor {
+    width: 200px;
+}
+
+#profilepic > * {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#profilepic-img {
+    border: black 5px solid;
+    border-radius: 5%;
+}
+
+#otherprofile {
+    border: black 3px solid;
+    border-radius: 2%;
+    padding: 10px;
+}
+
+#otherprofile > * {
+    width: 200px;
+}
+
+/* #profilepic-img {
+    position: relative;
+    float: right;
+} */
+
+/* https://css-tricks.com/snippets/css/transparent-background-images/ */
